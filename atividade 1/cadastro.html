@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Cadastro </title>
+  </head>
+  <body align="middle" bgcolor ="azure" >
+
+     <center><h1><i> Cadastro </h1></i></center>
+
+.<br><br>
+
+
+
+    <form action="validacao.html" method="post">
+
+      <label for="lblnome"> Nome: </label>
+      <input type="text" name="tnome">
+      <br><br>
+
+      <label for="lblcpf"> CPF: </label>
+      <input type="text" name="tcpf">
+      <br><br>
+
+      <label for="lblrg"> RG: </label>
+      <input type="text" name="trg">
+      <br><br>
+
+      <label for="lblrua"> Rua: </label>
+      <input type="text" name="trua">
+      <br><br>
+
+      <label for="lblnumero"> Número: </label>
+      <input type="text" name="tnumero">
+      <br><br>
+
+      <label for="lblcomplemento"> Complemento: </label>
+      <input type="text" name="tcomplemento">
+      <br><br>
+
+      <label for="lblbairro"> Bairro: </label>
+      <input type="text" name="tbairro">
+      <br><br>
+
+      <label for="lbldata"> Nascimento: </label>
+      <input type="date" name="ddata">
+       <br><br>
+		<label for="lblcidade"> Cidade: </label>
+       <div id="listacidades">
+        <select name="Cidades">
+          <option value="0"></option>
+          <option value="1">João Monlevade</option>
+          <option value="2">Itabira</option>
+          <option value="3">Alvinopolis</option>
+          <option value="4">São Domingos do prata</option>
+        </select>
+      </div>
+      <br>
+
+	  <label for="lblEstado"> Estado: </label>
+      <div id="listaestados">
+        <select name="Estados">
+          <option value="0"></option>
+          <option value="1">MG</option>
+          <option value="2">SP</option>
+          <option value="3">RJ</option>
+          <option value="4">BA</option>
+        </select>
+      </div>
+      <br>
+
+      <label name="lblsexo"> Sexo </label><br>
+      <input type="radio" name="genero" value="F">Feminino<br>
+      <input type="radio" name="genero" value="M">Masculino<br>
+      <input type="radio" name="genero" value="N">Não binário<br>
+      <br> <br>
+
+      <label name="lbltelefone1"> Telefone 1 </label><br>
+      <input type="checkbox" name="tel"> Whatsapp<br>
+      <input type="checkbox" name="tel"> Telegram<br>
+      <input type="checkbox" name="tel"> Skype<br>
+      <br><br>
+
+      <label name="lbltelefone2"> Telefone 2 </label><br>
+      <input type="checkbox" name="tel2"> Whatsapp<br>
+      <input type="checkbox" name="tel2"> Telegram<br>
+      <input type="checkbox" name="tel2"> Skype<br>
+      <br><br>
+
+      <label name="lblinteresse"> Áreas de Interesse  </label><br>
+      <input type="checkbox" name="tel2"> Programacao<br>
+      <input type="checkbox" name="tel2"> Teste<br>
+      <input type="checkbox" name="tel2"> Gerenciamento<br>
+      <input type="checkbox" name="tel2"> Redes<br>
+
+      <label for="lblemail"> E-mail: </label>
+      <input type="text" name="temail">
+      <br><br>
+
+      <label for="lblemail1">Confirma E-mail: </label>
+      <input type="text" name="temail1">
+      <br><br>
+
+
+      <label for="lblsenha"> Senha:  </label>
+      <input type="password" name="psenha">
+      <br><br>
+      <label for="lblsenha1"> Confirma Senha:  </label>
+      <input type="password" name="psenha1"> <br><br>
+
+      <input type="submit" value="Cadastrar">
+      <input type="reset" value="Limpar"><br><br>
+    </form>
+<a href="menu.html" target="principal">Voltar </a>
+
+
+
+   </body>
+
+</html>

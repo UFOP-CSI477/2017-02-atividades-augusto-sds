@@ -1,23 +1,19 @@
 
 
-table{
-    font-family: Arial, Sans-Serif;
-    font-size: 13px;
-    margin-bottom: 5px;
-    display: block;
-    padding: 4px;
-    border: solid 1px #85b1de;
-    width: 300px;
-    background-color: #EDF2F7;
+h1{
+  font-style: italic;
+  font-size: 50;
 }
-#inputArea input[type="text"], #inputArea textarea
-{
-    font-family: Arial, Sans-Serif;
-    font-size: 13px;
-    margin-bottom: 5px;
-    display: block;
-    padding: 4px;
-    border: solid 1px #85b1de;
-    width: 300px;
-    background-color: #EDF2F7;
+
+table{
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px;
+  border: solid 1px #85b1de;
+  width: 300px;
+  background-color: #d6e5f4;
+  background-repeat: repeat-x;
+  background-position: top;
 }

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="col-lg-12">
+        <img  src="ufoplogo.jpg"width="1430" height="200"  >
+      </div>
+      <center><h1><i> Cadastro </h1></i></center>
+
+ .<br><br>
+
+ <div class="row">
+  <div class="col col-lg-4">
+  </div>
+   <div class="col col-lg-8">
+     <form action="sucessoCadastro.html" method="post" class="formhorizont">
+
+       <div class="form-group">
+         <label for="lblmatri" class="col-sm-2 control-label">Matricula: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="matri" placeholder="Matricula">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="lblnome" class="col-sm-2 control-label">Nome: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="nome" placeholder="Nome">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="lblrua" class="col-sm-2 control-label">Rua: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="rua" placeholder="Rua">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="lblnumero" class="col-sm-2 control-label">Numero: </label>
+         <div class="col-sm-2">
+           <input type="text" class="form-control" id="numero" placeholder="Numero">
+         </div>
+       </div><br><br>
+
+       <div class="form-group">
+         <label for="lblcomple" class="col-sm-2 control-label">Complemento: </label>
+         <div class="col-sm-4">
+           <input type="text" class="form-control" id="complemento" placeholder="Complemento">
+         </div>
+       </div><br><br>
+
+       <label for="lblcidade" class="col-sm-2 control-label">Cidade: </label>
+           <div class="col-sm-4"id="listacidades">
+            <select class="form-control"name="Cidades">
+              <option value="0"></option>
+              <option value="1">João Monlevade</option>
+              <option value="2">Itabira</option>
+              <option value="3">Alvinopolis</option>
+              <option value="4">São Domingos do prata</option>
+            </select>
+          </div>
+          <br><br>
+
+    	  <label for="lblcidade" class="col-sm-2 control-label">Estado: </label>
+          <div class="col-sm-4" id="listaestados">
+            <select class="form-control" name="Estados">
+              <option value="0"></option>
+              <option value="1">MG</option>
+              <option value="2">SP</option>
+              <option value="3">RJ</option>
+              <option value="4">BA</option>
+            </select>
+          </div>
+          <br><br>
+
+          <label for="lblesexo" class="col-sm-2 control-label">Sexo: </label>
+          <label class="radio-inline"><input type="radio" name="genero" value="F">Feminino</label>
+          <label class="radio-inline"><input type="radio" name="genero" value="M">Masculino</label>
+          <label class="radio-inline"><input type="radio" name="genero" value="N">Não binário</label>
+          <br> <br>
+
+          <div class="form-group">
+            <label for="lblrg" class="col-sm-2 control-label">RG: </label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="rg" placeholder="RG">
+            </div>
+          </div><br><br>
+
+       <div class="form-group">
+         <label for="lblcpf" class="col-sm-2 control-label">CPF: </label>
+         <div class="col-sm-3">
+           <input type="text" class="form-control" id="cpf" placeholder="CPF">
+         </div>
+       </div><br><br>
+
+       <label for="lblsangue" class="col-sm-2 control-label">Tipo Sanguineo: </label>
+         <div class="col-sm-2" id="listasangue">
+           <select class="form-control" name="Tipo Sanguineo">
+             <option value="0"></option>
+             <option value="1">A</option>
+             <option value="2">B</option>
+             <option value="3">O</option>
+           </select>
+         </div>   <br><br>
+
+         <div class="form-group">
+           <label for="lblrh" class="col-sm-2 control-label">Fator Rh: </label>
+           <label class="radio-inline"><input type="radio" name="rh" value="positivo">Psotivo</label>
+           <label class="radio-inline"><input type="radio" name="rh" value="negativo">Negativo</label>
+        </div>   <br> <br>
+
+         <div class="form-group">
+           <label for="lbltelefone" class="col-sm-2 control-label">Telefone: </label>
+           <div class="col-sm-3">
+             <input type="text" class="form-control" id="tel" placeholder="Telefone">
+           </div>
+         </div><br><br>
+
+         <div class="form-group">
+           <label for="lblcelular" class="col-sm-2 control-label">Celular: </label>
+           <div class="col-sm-3">
+             <input type="text" class="form-control" id="cel" placeholder="Celular">
+           </div>
+         </div><br><br>
+
+         <label for="lblemail" class="col-sm-2 control-label"> E-mail: </label>
+          <div class="input-group col-sm-4">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input id="email" type="text" class="form-control" name="email" placeholder="E-mail">
+         </div>
+            <br><br>
+
+            <label for="lblemail2" class="col-sm-2 control-label"> Confirmar E-mail: </label>
+         <div class="input-group col-sm-4">
+         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+         <input id="email2" type="text" class="form-control" name="email2" placeholder="Confirmar E-mail">
+        </div>
+           <br><br>
+
+      <label for="lblsenha" class="col-sm-2 control-label"> Senha: </label>
+          <div class="input-group col-sm-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="senha" type="password" class="form-control" name="senha" placeholder="Senha">
+      </div>
+           <br><br>
+
+            <label for="lblsenha" class="col-sm-2 control-label"> Confirmar Senha: </label>
+         <div class="input-group col-sm-4">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="senha2" type="password" class="form-control" name="senha2" placeholder="Confirmar Senha">
+      </div>
+           <br><br>
+
+      <label for="lblacesso" class="col-sm-2 control-label">Acesso: </label><br>
+ 	 <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Biblioteca</label><br>
+ 	  </div>
+ 	  <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Restaurante</label><br>
+ 	  </div>
+ 	  <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Clube</label><br>
+ 	  </div>
+    <div class="checkbox">
+       <label><input type="checkbox" name="acesso"> Campo</label><br>
+ 	  </div>
+       <br><br>
+
+ </div>
+ </div>
+ <div class="row">
+   <div class="col col-lg-4">
+   </div>
+   <div class="col col-lg-2">
+       <button  class="btn btn-success" type="submit">Cadastrar</button>
+   </div>
+   <div class="col col-lg-2">
+       <button  class="btn btn-danger" type="reset">Limpar</button>
+   </div>
+  </div> <br><br><br>
+     </form>
+ 	<div class="row">
+ 		<div class="col col-lg-4">
+ 		</div>
+ 		<div class="col col-lg-3">
+ 			<div class="span3">
+
+ 				<center><a class="btn btn-primary" href="index.html" role="button">Voltar ao Menu</a></center>
+    </div>
+
+
+  </body>
+</html>

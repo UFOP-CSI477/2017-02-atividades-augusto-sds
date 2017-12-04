@@ -1,0 +1,21 @@
+#login{
+ border: solid 2px #D3D3D3;
+ padding: 20px;
+}
+#cabeca{
+border-width: medium;
+    border-style: solid;
+    border-color: #696969;
+	
+}
+#tabela{
+	  border: solid 3px #FFFFFF;
+
+}
+#linha1{
+	 border: solid 3px #FFFFFF;
+}
+#linha2{
+	 border: solid 3px #FFFFFF;
+	 background-color:#EEE9E9;
+}

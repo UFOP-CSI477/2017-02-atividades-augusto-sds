@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tabela</title>
+    <link href="config.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+  </head>
+  <body>
+    <div class="row">
+	<div class="col-sm-4">
+	</div>
+      <div class="col-sm-4">
+        
+ <form name="contato" method="post" align="center"  >
+
+    <div class="form-group">
+      <label  class="col-sm-2 control-label">Ano: </label>
+	    <div class="col-sm-4">  
+            <select class="form-control"name="ano"  >
+              <option value="0"></option>
+              <option value="1">2017/1</option>
+              <option value="2">2017/2</option>
+              
+            </select>
+        </div>
+      
+      
+    </div><br><br>
+
+    <div class="form-group">
+		<label  class="col-sm-2 control-label">Filtro: </label>
+
+		<div class="col-sm-4">
+           <input type="text" class="form-control" id="filtro" >
+        </div>
+
+    </div><br><br>
+
+    <button  class="btn btn-default" type="submit">Pesquisar</button>
+
+    <button  class="btn btn-default" type="reset">Limpar</button>
+
+
+  </div>
+  <div class="col-sm-4">
+  </div>
+</div>
+
+</form><br>
+      
+	<div class="row">
+		<div class="col-sm-3">
+		</div>
+		<div class="col-sm-6">
+	<table align="center" id="tabela" width="70%"  >
+		<tr   bgcolor="#B22222" id="linha1">
+
+			<th  width="5%" id="linha1" >Sigla</th>
+			<th  width="20%">Departamento</th>
+			
+
+		</tr>
+		<tr id="linha2" >
+			<td height="5%" id="linha1"><a href="#">DEACL</a></td>
+			<td>DEPARTAMENTO DE ANALISES CLINICAS</td>
+			
+		</tr>
+		<tr id="linha1" >
+			<td height="5%" id="linha1" ><a href="#">DEALI</a></td>
+			<td>DEPARTAMENTO DE ALIMENTOS</td>
+			
+		</tr>
+		<tr id="linha2" >
+			<td  height="5%" id="linha1" ><a href="#">DEAMB</a></td>
+			<td>DEPARTAMENTO DE ENGENHARIA AMBIENTAL</td>
+			
+		</tr>
+		
+	</table>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>

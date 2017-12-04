@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Introdução JS </title>
+    <script>
+      function exibirDados(){
+        document.getElementById("data").innerHTML = Date();
+        document.getElementById("nome").innerHTML = "Augusto";
+      }
+    </script>
+
+    <script>
+      var x = window.prompt("Insira o Primeiro Numero");
+      var y = window.prompt("Insira o Segundo Numero");
+      var w = parseInt(x) + parseInt(y);
+      window.alert("A soma é :" + w);
+    </script>
+
+    <script>
+      function somar1(){
+        var x = parseInt(document.form.valor1.value);
+        var y = parseInt(document.form.valor2.value);
+        var w = x + y;
+        document.form.valor3.value = w;
+      }
+    </script>
+
+  </head>
+  <body>
+      <script type="text/javascript">
+        document.write("Ola Mundo");
+      </script>
+      <noscript>
+        O seu Navegador não suporta JavaScript
+      </noscript>
+
+      <p id="data"> Data</p>
+      <p id="nome"> Nome</p>
+
+      <button type="button" onclick="exibirDados()">Exibir</button>
+
+      <fomr name="form" >
+        <label for="valor">Primeio Valor</label>
+        <input name="valor1" type="text">
+
+        <label for="valor2">Segundo Valor</label>
+        <input name="valor2" type="text">
+
+        <label for="valor3">Resultado: </label>
+        <input name="valor3" type="text">
+
+          <button type="button" onclick="somar1()">Somar</button>
+
+
+      </form>
+
+
+
+
+
+  </body>
+</html>

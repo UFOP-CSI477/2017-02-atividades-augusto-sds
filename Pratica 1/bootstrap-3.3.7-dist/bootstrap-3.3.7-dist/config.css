@@ -7,7 +7,7 @@ h1{
   text-align: center;
 }
 
-#formcont  input[type="text"], #formcont textarea {    			/*Retirado de http://goo.gl/smDAA */
+#tab  input[type="text"], #tab textarea {    			/*Retirado de http://goo.gl/smDAA */
 
  font-family: Arial, Sans-Serif;
      font-size: 13px;
@@ -16,15 +16,15 @@ h1{
      padding: 4px;
      border: solid 1px #85b1de;
      width: 300px;
-
+     
 
 }
-#formcont {   										 /*Retirado de http://goo.gl/smDAA */
+#tab {   										 /*Retirado de http://goo.gl/smDAA */
     font-size: 13px;
      background-color: #d6e5f4;
      padding: 10px;
  }
- #formcont input[type="text"]:focus, #formcont textarea:focus     /*Retirado de http://goo.gl/smDAA */
+ #tab input[type="text"]:focus, #tab textarea:focus     /*Retirado de http://goo.gl/smDAA */
  {
 
      background-color: #ffffff;
@@ -58,9 +58,9 @@ border-top:  1px solid black;
 #rodape {
 
 	width:100%;
-	position: sticky;
+	position: absolute;
 	bottom: 0;
 	text-align: center;
-  font-style: italic;
-  font-size: 5;
+	font-style: italic;
+	font-size: 80%;
 	}

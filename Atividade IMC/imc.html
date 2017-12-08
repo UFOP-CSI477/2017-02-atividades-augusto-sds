@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Atividade IMC</title>
+
+        <link rel="stylesheet" href="./bootstrap.css">
+
+        <script language=javascript type="text/javascript">
+        function imc() {
+            var p = parseFloat(document.dados.valor1.value);
+            var a = parseFloat(document.dados.valor2.value);
+            if (document.dados.valor1.value.length == 0 || isNaN(p)) {
+                //window.alert("Informe o primeiro valor corretamente!");
+                document.getElementById("grupoV1").classList.add("has-error");
+                document.getElementById("alertaV1").style.display = "block";
+                document.dados.valor1.value = "" ;
+                document.dados.valor1.focus();
+                return;
+            }
+            document.getElementById("grupoV1").classList.remove("has-error");
+            document.getElementById("alertaV1").style.display = "none";
+            if (document.dados.valor2.value.length == 0 || isNaN(a)) {
+                    //window.alert("Informe o segundo valor corretamente!");
+                    document.getElementById("grupoV2").classList.add("has-error");
+                    document.getElementById("alertaV2").style.display = "block";
+                    document.dados.valor2.value = "" ;
+                    document.dados.valor2.focus();
+                    return;
+            }
+            var quadrado = (a* a);
+            document.getElementById("grupoV2").classList.remove("has-error");
+            document.getElementById("alertaV2").style.display = "none";
+            var imc = (p/quadrado);
+                //window.alert(document.dados.valor1.value.length);
+                document.dados.resultado.value = imc.toFixed(2);
+            var p1=(18.5*quadrado) ;
+            var p2=(24.9*quadrado) ;
+                document.dados.ideal.value = p1.toFixed(2) ;
+                document.dados.ideal1.value = p2.toFixed(2) ;
+
+                if (imc < 18.5) {
+                  window.alert(" Você está Magro");
+                }
+                else if ((imc > 18.4) && (imc < 25)) {
+                  window.alert("Você está Normal");
+                 }
+                else if ((imc > 24.9) && (imc < 30))
+                {window.alert(" Você está com Sobrepeso") ;
+                 }
+                else if ((imc > 29.9) && (imc < 35)) {
+                  window.alert("Você está com Obesidade") 	;
+                }
+                else if ((imc > 34.9) && (imc < 40)) {
+                  window.alert("Você está com Obesidade grave")		;		  }
+            }
+
+        </script>
+
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="jumbotron text-center" width="100%">
+                <h2>IMC</h2>
+            </div>
+
+        <form name="dados">
+
+            <div id="grupoV1" class="form-group">
+                <label for="valor1">Peso</label>
+                <input name="valor1" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaV1">
+                    Informe o peso corretamente
+                </div>
+
+            </div>
+
+            <div id="grupoV2" class="form-group">
+                <label for="valor2">Altura</label>
+                <input name="valor2" type="text" class="form-control">
+
+                <div class="alert alert-danger" style="display: none" id="alertaV2">
+                    Informe a altura
+                </div>
+
+            </div>
+
+            <div id="grupoRes" class="form-group">
+                <label for="resultado">IMC:</label>
+                <input name="resultado" type="text" disabled="disabled" class="form-control">
+            </div>
+            <div id="grupoIdeal" class="form-group col col-sm-4">
+                <label for="ideal">Peso Ideal:</label>
+                <input name="ideal" type="text" disabled="disabled" class="form-control">
+            </div>
+            <div id="grupoIdeal" class="form-group col col-sm-4">
+                <label for="ideal1">a</label>
+                <input name="ideal1" type="text" disabled="disabled" class="form-control">
+            </div><br><br><br><br>
+
+            <button type="button" class="btn btn-primary" onclick="imc()">Calcular</button>
+            <button type="reset" class="btn btn-primary">Limpar</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+    </body>
+</html>

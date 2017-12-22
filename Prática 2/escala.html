@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Escala </title>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="escalacalc.js"></script>
+
+  </head>
+
+
+
+
+  <body>
+	<div class="row">
+		<div class="col col-lg-4">
+		</div>
+		<div class="col col-lg-4">
+			<form action="#" method="post" class="formhorizont" id="formescala">
+
+			<div class="form-group" id="gamplitude">
+				<label for="lblampli" class="col-sm-4 control-label">Amplitude: </label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" name="ampli" placeholder="Amplitude">
+				</div>
+				<div class="alert alert-danger" style="display: none" id="alertaV1">
+                    Informe a amplitude
+                </div>
+
+			</div><br><br>
+
+			<div class="form-group" id="gtempo">
+				<label for="lbltempo" class="col-sm-4 control-label">Intervalo de Tempo: </label>
+				<div class="col-sm-6">
+					<input type="text" class="form-control" name="tempo" placeholder="Intervalo de tempo">
+				</div>
+				<div class="alert alert-danger" style="display: none" id="alertaV2">
+                    Informe o tempo
+                </div>
+			</div><br><br>
+			<center><button  class="btn " type="submit" name="calcular" id="calcular">Calcular</button></center>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col col-sm-4">
+		</div>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="resultado" id="resultado" placeholder="Resultado">
+		</div>
+	</div>
+
+		</form>
+
+
+
+
+  </body>
+
+</html>

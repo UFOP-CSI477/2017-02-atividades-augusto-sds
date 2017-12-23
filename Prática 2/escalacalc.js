@@ -43,27 +43,27 @@ $( "#calcular" ).click(function() {
 		alert("a Escala é : "+ res1);
 
 		//$("input").val(res1);
-		//$("#result").val(res1);
+		$("#result").val(res1);
 		//$("input[name='result']").val(n);
 
 
-		/*if ($res1 < 3.5 ){
+		/*if (res1 < 3.5 ){
 			alert("Tremor Geralmente não sentido");
 		}
 
-		if ($res1 >= 3.5 ) && ($res1 <= 5.4 ) {
+		if (res1 >= 3.5 ) && (res1 <= 5.4 ) {
 			alert("As vezes Sentido, mas raramente causa danos")
 		}
-		if ($res1 >= 5.5 ) && ($res1 <= 6.0 ) {
+		if (res1 >= 5.5 ) && (res1 <= 6.0 ) {
 			alert("No máximo causa pequenos danos a prédios bem construidos");
 		}
-		if ($res1 >= 6.1 ) && ($res1 <= 6.9 ) {
+		if (res1 >= 6.1 ) && (res1 <= 6.9 ) {
 			alert("Pode ser destrutivo em áreas em torno de ate 100km");
 		}
-		if ($res1 >= 7.0 ) && ($res1 <= 7.9 ) {
+		if (res1 >= 7.0 ) && (res1 <= 7.9 ) {
 			alert("Grande terremoto");
 		}
-		if ($res1 >= 8 )  {
+		if (res1 >= 8 )  {
 			alert("Enorme terremoto");
 		}*/
 
